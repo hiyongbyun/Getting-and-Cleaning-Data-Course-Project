@@ -36,4 +36,4 @@ The observations with vaues ranging between 1 and 6 under the "activity" column 
 
 The data frame was rearranged by "subject", then grouped by "subject" with subgroup "activity"
 
-Average was obtained for 86 variables by applying *summarize* with *mean* function.
+Average was obtained for 86 variables by applying *summarize_all* with *mean* function.
