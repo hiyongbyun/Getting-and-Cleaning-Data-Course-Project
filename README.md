@@ -33,10 +33,7 @@ merged_data <- rbind(test_data, train_data)`
 ```
 
 ### Merge subject ID, activity labels and feature vector data
-```
-merged_data <- cbind(activity, merged_data)
-merged_data <- cbind(subject, merged_data)
-```
+`merged_data <- cbind(subject, activity, merged_data)`
 
 ### Select variables containing activity, mean, or std
 `mean_std_data <- select(merged_data, subject, activity, matches("mean|std"))`
