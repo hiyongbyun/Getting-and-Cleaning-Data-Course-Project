@@ -1,3 +1,4 @@
+##Load dplyr package
 library(dplyr)
 
 ##Store variable names by reading features.txt
@@ -53,3 +54,6 @@ subject_mean_std_data <- arrange(subject_mean_std_data, subject)
 
 ##Summarize with averages for all variables
 average_data <- summarize_all(subject_mean_std_data, mean)
+
+##Output tidy data set containing average values
+View(average_data)
