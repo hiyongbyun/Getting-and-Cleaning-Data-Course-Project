@@ -8,28 +8,28 @@
 ### Store variable names by reading features.txt
 ```
 features <- read.table("UCI HAR Dataset/features.txt")
-features <- t(features$V2)`
+features <- t(features$V2)
 ```
 
 ### Store subject ID by reading subject_test.txt and subject_train.txt
 ```
 subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt", col.names = "subject")
 subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt", col.names = "subject")
-subject <- rbind(subject_test, subject_train)`
+subject <- rbind(subject_test, subject_train)
 ```
 
 ### Store activity labels by reading y_test.txt and y_train.txt
 ```
 activity_test <- read.table("UCI HAR Dataset/test/y_test.txt", col.names = "activity")
 activity_train <- read.table("UCI HAR Dataset/train/y_train.txt", col.names = "activity")
-activity <- rbind(activity_test, activity_train)`
+activity <- rbind(activity_test, activity_train)
 ```
 
 ### Store feature vector by reading X_test.txt and X_train.txt
 ```
 test_data <- read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)
 train_data <- read.table("UCI HAR Dataset/train/X_train.txt", col.names = features)
-merged_data <- rbind(test_data, train_data)`
+merged_data <- rbind(test_data, train_data)
 ```
 
 ### Merge subject ID, activity labels and feature vector data
@@ -56,7 +56,7 @@ fix_variable_names <- sub("^f", "frequency", fix_variable_names)
 fix_variable_names <- sub("Acc", "acceleration", fix_variable_names)
 fix_variable_names <- sub("Mag", "magnitude", fix_variable_names)
 fix_variable_names <- gsub("\\.", "", fix_variable_names)
-fix_variable_names <- tolower(fix_variable_names)`
+fix_variable_names <- tolower(fix_variable_names)
 ```
 
 ### Rename data frame columns
