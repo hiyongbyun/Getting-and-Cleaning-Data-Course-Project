@@ -12,7 +12,7 @@ Following files were imported for analysis:
 * train/subject_train.txt: Each row identifies the subject who performed the activity, ranging between 1 and 30.
 
 
-Following files were imported as data frames then merged:
+Following files were imported as data frames which were then merged:
 * features.txt
 * X_train.txt
 * y_train.txt
