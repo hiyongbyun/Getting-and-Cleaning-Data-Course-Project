@@ -4,10 +4,10 @@ Following files were imported for analysis:
 * features.txt: List of all features (variables).
 * activity_labels.txt: Contains activity names.
 * train/X_train.txt: Training set containing 7352 observations and 561 variables.
-* train/y_train.txt: Training labels for 561 variables
+* train/y_train.txt: Training labels for 561 variables.
 * train/subject_train.txt: Subject IDs for 7352 observations.
 * test/X_test.txt: Test set containing 7352 observations and 561 variables.
-* test/y_test.txt: Test labels for 561 variables
+* test/y_test.txt: Test labels for 561 variables.
 * test/subject_test.txt: Subject IDs for 7352 observations.
 * train/subject_train.txt: Each row identifies the subject who performed the activity, ranging between 1 and 30.
 
@@ -20,7 +20,9 @@ Following files were imported as data frames then merged:
 * y_test.txt
 
 86 variables containing "mean" and "std" were selected from the 561 variables. They were then renamed as per tidy data variable naming principles:
+```
 "timebodyaccelerationmeanx" "timebodyaccelerationmeany" "timebodyaccelerationmeanz" "timebodyaccelerationstdx" "timebodyaccelerationstdy" "timebodyaccelerationstdz" "timegravityaccelerationmeanx" "timegravityaccelerationmeany" "timegravityaccelerationmeanz" "timegravityaccelerationstdx" "timegravityaccelerationstdy" "timegravityaccelerationstdz" "timebodyaccelerationjerkmeanx" "timebodyaccelerationjerkmeany" "timebodyaccelerationjerkmeanz" "timebodyaccelerationjerkstdx" "timebodyaccelerationjerkstdy" "timebodyaccelerationjerkstdz" "timebodygyromeanx" "timebodygyromeany" "timebodygyromeanz" "timebodygyrostdx" "timebodygyrostdy" "timebodygyrostdz" "timebodygyrojerkmeanx" "timebodygyrojerkmeany" "timebodygyrojerkmeanz" "timebodygyrojerkstdx" "timebodygyrojerkstdy" "timebodygyrojerkstdz" "timebodyaccelerationmagnitudemean" "timebodyaccelerationmagnitudestd" "timegravityaccelerationmagnitudemean" "timegravityaccelerationmagnitudestd" "timebodyaccelerationjerkmagnitudemean" "timebodyaccelerationjerkmagnitudestd" "timebodygyromagnitudemean" "timebodygyromagnitudestd" "timebodygyrojerkmagnitudemean" "timebodygyrojerkmagnitudestd" "frequencybodyaccelerationmeanx" "frequencybodyaccelerationmeany" "frequencybodyaccelerationmeanz" "frequencybodyaccelerationstdx" "frequencybodyaccelerationstdy" "frequencybodyaccelerationstdz" "frequencybodyaccelerationmeanfreqx" "frequencybodyaccelerationmeanfreqy" "frequencybodyaccelerationmeanfreqz" "frequencybodyaccelerationjerkmeanx" "frequencybodyaccelerationjerkmeany" "frequencybodyaccelerationjerkmeanz" "frequencybodyaccelerationjerkstdx" "frequencybodyaccelerationjerkstdy" "frequencybodyaccelerationjerkstdz" "frequencybodyaccelerationjerkmeanfreqx" "frequencybodyaccelerationjerkmeanfreqy" "frequencybodyaccelerationjerkmeanfreqz" "frequencybodygyromeanx" "frequencybodygyromeany" "frequencybodygyromeanz" "frequencybodygyrostdx" "frequencybodygyrostdy" "frequencybodygyrostdz" "frequencybodygyromeanfreqx" "frequencybodygyromeanfreqy" "frequencybodygyromeanfreqz" "frequencybodyaccelerationmagnitudemean" "frequencybodyaccelerationmagnitudestd" "frequencybodyaccelerationmagnitudemeanfreq" "frequencybodybodyaccelerationjerkmagnitudemean" "frequencybodybodyaccelerationjerkmagnitudestd" "frequencybodybodyaccelerationjerkmagnitudemeanfreq" "frequencybodybodygyromagnitudemean" "frequencybodybodygyromagnitudestd" "frequencybodybodygyromagnitudemeanfreq" "frequencybodybodygyrojerkmagnitudemean" "frequencybodybodygyrojerkmagnitudestd" "frequencybodybodygyrojerkmagnitudemeanfreq" "angletbodyaccelerationmeangravity" "angletbodyaccelerationjerkmeangravitymean" "angletbodygyromeangravitymean" "angletbodygyrojerkmeangravitymean" "anglexgravitymean" "angleygravitymean" "anglezgravitymean"
+```
 
 Above data set was merged with "subject" and "activity" labels.
 
