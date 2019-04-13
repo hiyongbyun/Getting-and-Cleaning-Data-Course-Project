@@ -6,9 +6,9 @@ Following files were imported for analysis:
 * train/X_train.txt: Training set containing 7352 observations and 561 variables.
 * train/y_train.txt: Training labels for 561 variables.
 * train/subject_train.txt: Subject IDs for 7352 observations.
-* test/X_test.txt: Test set containing 7352 observations and 561 variables.
+* test/X_test.txt: Test set containing 2947 observations and 561 variables.
 * test/y_test.txt: Test labels for 561 variables.
-* test/subject_test.txt: Subject IDs for 7352 observations.
+* test/subject_test.txt: Subject IDs for 2947 observations.
 * train/subject_train.txt: Each row identifies the subject who performed the activity, ranging between 1 and 30.
 
 
